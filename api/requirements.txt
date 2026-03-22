@@ -1,0 +1,16 @@
+# Infrastructure and Configuration
+python-dotenv
+
+# Observability (Langfuse)
+langfuse
+
+# AI and Models
+openai
+
+# Orchestration
+# langchain
+# langchain-openai
+
+# Web Server
+fastapi
+uvicorn[standard]
