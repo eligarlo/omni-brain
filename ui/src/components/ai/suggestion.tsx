@@ -2,16 +2,17 @@
 
 import type { ComponentProps } from 'react'
 import { Button } from '@/components/ui/button'
-import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 import { cn } from '@/lib/utils'
 
-export type SuggestionsProps = ComponentProps<typeof ScrollArea>
+export type SuggestionsProps = ComponentProps<'div'>
 
 export const Suggestions = ({ className, children, ...props }: SuggestionsProps) => (
-	<ScrollArea className='w-full overflow-x-auto whitespace-nowrap' {...props}>
+	<div
+		className='w-full overflow-x-auto pb-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-border [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar]:h-1'
+		{...props}
+	>
 		<div className={cn('flex w-max flex-nowrap items-center gap-2', className)}>{children}</div>
-		<ScrollBar className='hidden' orientation='horizontal' />
-	</ScrollArea>
+	</div>
 )
 
 export type SuggestionProps = Omit<ComponentProps<typeof Button>, 'onClick'> & {

@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.2.8",
+    "@fontsource-variable/noto-sans": "^5.2.10",
+    "@fontsource-variable/roboto": "^5.2.10",
+    "@streamdown/code": "^1.1.1",
     "@tailwindcss/vite": "^4.2.2",
     "ai": "^6.0.134",
     "class-variance-authority": "^0.7.1",
