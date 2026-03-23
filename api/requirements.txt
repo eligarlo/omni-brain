@@ -12,5 +12,5 @@ openai
 # langchain-openai
 
 # Web Server
-fastapi
+fastapi[standard]
 uvicorn[standard]
