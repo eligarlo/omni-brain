@@ -5,7 +5,7 @@ from langfuse import observe
 
 load_dotenv()
 
-model = os.getenv("OPENAI_MODEL", "gpt-4.1-nano")
+model = os.getenv("OPENAI_MODEL", "gpt-5-nano")
 
 # The @observe() decorator automatically creates traces
 @observe()
