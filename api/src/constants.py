@@ -16,7 +16,7 @@ class ConversationRole(str, Enum):
     """
 
     USER = "user"
-    SYSTEM = "system"
+    ASSISTANT = "assistant"
 
 
 class ConversationDescriptions(StrEnum):

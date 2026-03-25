@@ -28,7 +28,7 @@ class ConversationQueryCreate(BaseModel):
     )
     role: ConversationRole = Field(
         default=ConversationRole.USER,
-        description="Role of the message sender (user, assistant, system)",
+        description="Role of the message sender (user, assistant)",
     )
     query: str = Field(description="Query text for the conversation message")
 
